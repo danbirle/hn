@@ -1,6 +1,6 @@
 D:
 
-cd D:\hn
+cd D:\hn-master
 
 npm install
 npm start
