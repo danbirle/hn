@@ -1,24 +1,30 @@
 html, body {
   font-size: 14px;
-  font-family: Arial, sans-serif; }
-
+  font-family: Arial, sans-serif;
+}
 .App {
   width: 85%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
+
+$colorMain: #228FF3;
+$colorAccent: #360c6d;
 
 body {
-  background: #360c6d; }
+  background: $colorAccent;
+}
 
 h1 {
   font-size: 1.5rem;
-  padding-bottom: .5rem; }
-
+  padding-bottom: .5rem;
+}
 p {
-  padding-bottom: .5rem; }
-
+  padding-bottom: .5rem;
+}
 a {
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .card {
   transition: transform .3s, opacity .3s;
@@ -28,31 +34,35 @@ a {
   max-width: 25rem;
   height: 0;
   transform: translate(-4rem, 2rem);
-  background: #228FF3;
+  background: $colorMain;
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -o-border-radius: 2px;
   padding: 1rem;
   box-sizing: border-box;
-  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.5); }
-  .card.loaded {
-    transform: translate(0, 0);
+  box-shadow: 4px 4px 1px rgba(0,0,0,0.5);
+  &.loaded {
+    transform: translate(0,0);
     opacity: 1;
     height: 20rem;
     margin: 1%;
     position: relative;
-    float: left; }
-    .card.loaded a {
+    float: left;
+    a {
       word-break: break-all;
       width: 100%;
       display: inline-block;
       white-space: nowrap;
       overflow: hidden;
-      text-overflow: ellipsis; }
+      text-overflow: ellipsis;
+    }
+  }
+}
+
 
 .score {
-  color: #228FF3;
+  color: $colorMain;
   font-weight: 700;
   position: absolute;
   bottom: 0;
@@ -68,4 +78,5 @@ a {
   border-bottom-right-radius: 2px;
   -webkit-border-bottom-right-radius: 2px;
   -moz-border-bottom-right-radius: 2px;
-  -o-border-bottom-right-radius: 2px; }
+  -o-border-bottom-right-radius: 2px;
+}
