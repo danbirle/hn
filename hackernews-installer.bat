@@ -1,6 +1,6 @@
-Q:
+D:
 
-cd Q:\hn
+cd D:\hn
 
 npm install
 npm start

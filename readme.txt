@@ -1,4 +1,4 @@
-Edit the .bat file (in case you don't have a D drive) and run it.
+.bat file is for installing. can change the Drive and local folder
 - react & axios are used to load the data from the api (ws.js file)
 - objects of class Story will be loaded into the view as soon as the last callback is done
 - getting the random ids: 10 times picking a random array-position number and removing it afterwards, so it does not re-occur
